@@ -12,7 +12,13 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Local env files
+# Environment variables (never commit secrets)
+.env
+.env.local
+.env.development
+.env.development.local
+.env.production
+.env.production.local
 .env*.local
 
 # Vercel
