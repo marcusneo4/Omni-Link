@@ -5,7 +5,7 @@ import { isAuthenticatedFromRequest } from '@/lib/auth'
 const PROTECTED = ['/browse', '/admin']
 const AUTH_ONLY = ['/login']
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
   const authed = isAuthenticatedFromRequest(request)
 
