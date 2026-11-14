@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mf-red: #E50914;
+  --color-mf-red-hover: #f40612;
+  --color-mf-dark: #141414;
+  --color-mf-surface: #1f1f1f;
+  --color-mf-surface-2: #2a2a2a;
+  --color-mf-text: #ffffff;
+  --color-mf-text-secondary: #b3b3b3;
+  --color-mf-overlay: rgba(0, 0, 0, 0.75);
+  --font-display: var(--font-bebas);
+  --font-sans: var(--font-geist);
+}
+
+:root {
+  --background: #141414;
+  --foreground: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #141414;
+  color: #ffffff;
+  scrollbar-color: #4a4a4a #141414;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141414;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a4a4a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6a6a6a;
+}
+
+::selection {
+  background: #E50914;
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background: #E50914;
+  color: #ffffff;
+}
+
+body {
+  background: #141414;
+  color: #ffffff;
+  font-family: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom focus ring */
+:focus-visible {
+  outline: 2px solid #E50914;
+  outline-offset: 2px;
+}
+
+/* Scrollable rows — hide scrollbar visually but keep functionality */
+.row-scroll {
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.row-scroll::-webkit-scrollbar {
+  display: none;
+}
